@@ -1,3 +1,4 @@
+#CHANGE
 # START OF ALL FUNCTIONS
 
 # FUNCTION: Generate password from info cat got from player
