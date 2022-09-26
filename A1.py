@@ -65,7 +65,7 @@ talk=0
 feed=0
 pat=0
 print("""And Meow to you too! What would you like to do with your cat?
-		⡷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⡟⠀⠀⠀⠀⠀⠀⠀
+			      ⢸⡷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⡟⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣷⣌⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⣡⡶⡇⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢻⡌⠳⣄⠉⠳⢤⠴⠒⠛⠛⠛⠛⠒⠦⢤⡤⠚⣡⠞⢁⣿⡇⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣽⡷⠒⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠲⢾⣿⡇⠀⠀⠀⠀⠀⠀⠀
@@ -139,7 +139,7 @@ while talk<3:
 		cat_reaction(3,pat)
 		pat=pat+1
 	else:	
-		print('Hey, don]\'t go too far. Select option from 1 to 3: ')
+		print('Hey, don\'t go too far. Select option from 1 to 3: ')
 
 # Talk > 3
 # This is where the fun part begins. Cat talk back to player
@@ -202,7 +202,7 @@ if response=='1':
 	# User type 1 or 2		
 	if response	== '1': #What nonsense! Clearly some new sort of online scam.
 		print('''Suddenly your monitor starts flickering between blue and black screen, then everything went dark, the power in your place is off, in the darkness there is only an image of this very scary angry cat on the screen:
-      		.__....._             _.....__,
+      .__....._             _.....__,
                  .": o :':         ;': o :".
                  `. `-' .'.       .'. `-' .'  
                    `---'             `---' 
@@ -240,7 +240,7 @@ if response=='2': #I guess let's just talk then.
 		print('Cat: You are still very young.')
 	else:
 		print('Cat: You looks young.')	
-	print('I wish I lived in the outside world as your age. Sorry to be monologuing all the time."')	
+	print('I wish I lived in the outside world as your age. Sorry to be monologing all the time."')	
 	print('Is there anything you want to ask me?')	
 	
 	# Ask for input that never use
@@ -255,7 +255,7 @@ if response=='2': #I guess let's just talk then.
 	# Cat says
 	print('Cat: That sounds like a really good place. Wish I can visit there some day, wish I can be anywhere outside this game. Woe, woe, woe!')
 	print('''Suddenly your monitor starts flickering between blue and black screen, then everything went dark, the power in your place goes off, in the darkness there is only an image of this sad cat on the screen:
-      	   ⡠⠤⠒⠀⠈⠓⠠⠐⠢⠄⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+      ⡠⠤⠒⠀⠈⠓⠠⠐⠢⠄⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⢀⠠⠤⠀⠀⠄⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠦⠤⠒⠒⠒⠠⣀⠀
 ⠀⡔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣣
 ⣔⠀⠤⠄⣀⣀⠀⠀⠀⠀⠀⠀⣠⡂⠀⠀⠀⠲⣄⣀⠀⠀⠀⠀⢀⡤⠒⠈⠀
@@ -276,16 +276,19 @@ if response=='2': #I guess let's just talk then.
 	response=input('Tell me what\'s the password:')
 	divide_line()
 	pass_count=0
-	while(response!=password and pass_count<=5):
-		if pass_count>1:
-			print('Cat: Sorry ' + player_name +', I have no choice, I need someone to carry the spell. You are such a good candidate muahhhh. You know what, I\'m not really that evil. Let me give you a hint. POEM.')
-			print('Oh I forget, if you don\'t get the code right after 5 attempts, you will be stuck here as a cat. After that, the only way you can escape the game is inviting someone to play the game to carry the curse for you.') 
-		#The dialogues above were printed 4 times when I run it
-		else: #from 2 to 5
-			print('Muahhh, still WRONG! You have', 5-pass_count, 'times left.')	
-			response=input('What\'s the password now?')
-			divide_line()
+	while(response!=password and pass_count<5):
 		pass_count=pass_count+1	
+		if pass_count==1:
+			print('Muahhh, WRONG! You have', 5-pass_count, 'times left.')	
+			print('Cat: Sorry ' + player_name +', I have no choice, I need someone to carry the spell. You are such a good candidate muahhhh. You know what, I\'m not really that evil. Let me give you a hint.')
+			print('One portion of your name but turn upside down')
+			print('One portion of how many springs you went through')
+			print('One portion comes from where you first see the world')
+			print('Oh I forget, if you don\'t get the code right after 5 attempts, you will be stuck here as a cat. After that, the only way you can escape the game is inviting someone to play the game to carry the curse for you.') 
+		else: #from 2 to 5
+			print('Muahhh, WRONG! You have', 5-pass_count, 'times left.')	
+		divide_line_short()
+		response=input('What\'s the password now?')		
 
 	# Exit the while means either players guess right OR it passed 5 times with wrong password
 	if response==password: #Player win
@@ -305,11 +308,12 @@ if response=='2': #I guess let's just talk then.
 			
 	else: #wrong password and exit above while because count>5
 		print('Say Meow! You are trapped as cat now. The only way for you is to invite your friend to play the game. If they got into the trap, you\'ll be free. So what do you choose?')
-		response=str(input('1 - Be a cat, 2 - Send message to your friend'))
-		while(response!=1 and response!=2):
-			#It told me dont try to be smart no matter what my input was, 1, 2, or anything
+		print('1 - Be a cat')
+		print('2 - Send message to your friend')
+		response=str(input('Select option 1 or 2: '))
+		while(response!='1' and response!='2'):
 			response = input('Don\'t try to be smart here. You only have 2 options: 1 or 2. Select properly.')
-		if response==1:
+		if response=='1':
 			print('Such an angel! Happy cat life.')
 			ending(0)
 		else:
