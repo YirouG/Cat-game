@@ -65,7 +65,7 @@ talk=0
 feed=0
 pat=0
 print("""And Meow to you too! What would you like to do with your cat?
-			⢸⡷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⡟⠀⠀⠀⠀⠀⠀⠀
+		⡷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⡟⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣷⣌⠙⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⣡⡶⡇⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢻⡌⠳⣄⠉⠳⢤⠴⠒⠛⠛⠛⠛⠒⠦⢤⡤⠚⣡⠞⢁⣿⡇⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣽⡷⠒⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠲⢾⣿⡇⠀⠀⠀⠀⠀⠀⠀
@@ -202,7 +202,7 @@ if response=='1':
 	# User type 1 or 2		
 	if response	== '1': #What nonsense! Clearly some new sort of online scam.
 		print('''Suddenly your monitor starts flickering between blue and black screen, then everything went dark, the power in your place is off, in the darkness there is only an image of this very scary angry cat on the screen:
-      .__....._             _.....__,
+      		.__....._             _.....__,
                  .": o :':         ;': o :".
                  `. `-' .'.       .'. `-' .'  
                    `---'             `---' 
@@ -240,7 +240,7 @@ if response=='2': #I guess let's just talk then.
 		print('Cat: You are still very young.')
 	else:
 		print('Cat: You looks young.')	
-	print('I wish I lived in the outside world as your age. Sorry to be monologing all the time."')	
+	print('I wish I lived in the outside world as your age. Sorry to be monologuing all the time."')	
 	print('Is there anything you want to ask me?')	
 	
 	# Ask for input that never use
@@ -255,7 +255,7 @@ if response=='2': #I guess let's just talk then.
 	# Cat says
 	print('Cat: That sounds like a really good place. Wish I can visit there some day, wish I can be anywhere outside this game. Woe, woe, woe!')
 	print('''Suddenly your monitor starts flickering between blue and black screen, then everything went dark, the power in your place goes off, in the darkness there is only an image of this sad cat on the screen:
-      ⡠⠤⠒⠀⠈⠓⠠⠐⠢⠄⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀
+      	   ⡠⠤⠒⠀⠈⠓⠠⠐⠢⠄⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⢀⠠⠤⠀⠀⠄⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠦⠤⠒⠒⠒⠠⣀⠀
 ⠀⡔⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣣
 ⣔⠀⠤⠄⣀⣀⠀⠀⠀⠀⠀⠀⣠⡂⠀⠀⠀⠲⣄⣀⠀⠀⠀⠀⢀⡤⠒⠈⠀
