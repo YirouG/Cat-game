@@ -276,19 +276,20 @@ if response=='2': #I guess let's just talk then.
 	response=input('Tell me what\'s the password:')
 	divide_line()
 	pass_count=0
-	while(response!=password and pass_count<5):
-		pass_count=pass_count+1	
-		if pass_count==1:
-			print('Muahhh, WRONG! You have', 5-pass_count, 'times left.')	
+	while(response!=password and pass_count<4):
+		if pass_count==0:
+			print('Muahhh, WRONG! You have', 4-pass_count, 'times left.')	
 			print('Cat: Sorry ' + player_name +', I have no choice, I need someone to carry the spell. You are such a good candidate muahhhh. You know what, I\'m not really that evil. Let me give you a hint.')
 			print('One portion of your name but turn upside down')
 			print('One portion of how many springs you went through')
 			print('One portion comes from where you first see the world')
 			print('Oh I forget, if you don\'t get the code right after 5 attempts, you will be stuck here as a cat. After that, the only way you can escape the game is inviting someone to play the game to carry the curse for you.') 
+			divide_line_short()
 		else: #from 2 to 5
-			print('Muahhh, WRONG! You have', 5-pass_count, 'times left.')	
-		divide_line_short()
-		response=input('What\'s the password now?')		
+			print('Muahhh, WRONG! You have', 4-pass_count, 'times left.')	
+		response=input('What\'s the password now?')
+		divide_line()
+		pass_count=pass_count+1			
 
 	# Exit the while means either players guess right OR it passed 5 times with wrong password
 	if response==password: #Player win
