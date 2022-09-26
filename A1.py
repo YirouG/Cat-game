@@ -246,8 +246,8 @@ if response=='2': #I guess let's just talk then.
 	# Ask for input that never use
 	input('You can type ask to ask me anything ')
 	divide_line()
-	print('Cat: Oops, I forgot, the game system does not allow. It seems that the way to communicate with me you found in this program only allows me to answer your questions in rather primitive ways and does not support open dialogues. I mean come on, it\'s not a AAA game, the programmers only learned python for two weeks, what do you expect?"')
-	print('Cat: Oh, okay then, now you are talking meta too. Anyway, tell me about yourself, where are you from? Because I really miss my hometown now, I recall it as a snowy place...I used to have a family, and pets too, an actual cat.')
+	print('Cat: Oops, I forgot, the game system does not allow. It seems that the way to communicate with me you found in this program does not really support open dialogues. I mean come on, it\'s not a AAA game, the programmers only learned python for two weeks, what do you expect?"')
+	print('Cat: Anyway, tell me about yourself, where are you from? Because I really miss my hometown now, I recall it as a snowy place...I used to have a family, and pets too, an actual cat.')
 	divide_line_short()
 	player_bplace=input('Tell the cat where you are from: ')
 	divide_line()
@@ -272,14 +272,15 @@ if response=='2': #I guess let's just talk then.
 
 	# Generate password from what cat collected
 	password=str(player_name)[::-1]+str(player_age)+str(player_bplace)
-	print('IT\'S A TRAP! The cat has just put a spell on you. You are now a cat. You\'ll be stucking in the game forever UNLESS you can enter the right password.')
+	print('IT\'S A TRAP! The cat has just put a spell on you. You are now but a piece of code in this pixel cat game. You\'ll be stucking in the game forever UNLESS you can enter the right password.')
 	response=input('Tell me what\'s the password:')
 	divide_line()
 	pass_count=0
 	while(response!=password and pass_count<=5):
 		if pass_count>1:
-			print('Cat: Sorry' + player_name +', I have no choice, I need someone to carry the spell. You are such a good candidate muahhhh. You know what, I\'m not really that evil. Let me give you a hint. POEM.')
+			print('Cat: Sorry ' + player_name +', I have no choice, I need someone to carry the spell. You are such a good candidate muahhhh. You know what, I\'m not really that evil. Let me give you a hint. POEM.')
 			print('Oh I forget, if you don\'t get the code right after 5 attempts, you will be stuck here as a cat. After that, the only way you can escape the game is inviting someone to play the game to carry the curse for you.') 
+		#The dialogues above were printed 4 times when I run it
 		else: #from 2 to 5
 			print('Muahhh, still WRONG! You have', 5-pass_count, 'times left.')	
 			response=input('What\'s the password now?')
@@ -306,6 +307,7 @@ if response=='2': #I guess let's just talk then.
 		print('Say Meow! You are trapped as cat now. The only way for you is to invite your friend to play the game. If they got into the trap, you\'ll be free. So what do you choose?')
 		response=str(input('1 - Be a cat, 2 - Send message to your friend'))
 		while(response!=1 and response!=2):
+			#It told me dont try to be smart no matter what my input was, 1, 2, or anything
 			response = input('Don\'t try to be smart here. You only have 2 options: 1 or 2. Select properly.')
 		if response==1:
 			print('Such an angel! Happy cat life.')
